@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ecf2f8;
+}
+
+.mainContainer {
+  width: 100%;
+  height: 100vh;
+  display: Flex;
+  align-items: center;
+  justify-content: center;
+  /*   border: solid red; */
+}
+
+.secondaryContainer {
+  width: 60%;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+}
