@@ -18,8 +18,94 @@ body {
 }
 
 .secondaryContainer {
-  width: 60%;
-  height: 200px;
+  width: 75%;
+  min-height: 35vh;
   background-color: white;
   border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  /* border: solid red; */
+}
+
+.imageContainer {
+  /* border: solid blue; */
+  display: flex;
+  min-width: 80px;
+}
+
+.imageContainer img {
+  width: 100%;
+  min-height: 35vh;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.contentContainer {
+  /* width: 100px; */
+  margin: 1.5em;
+}
+
+.contentContainer h1 {
+  font-size: 1.2rem;
+  color: #48556a;
+  font-family: Manrope;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+.contentContainer p {
+  margin-top: 10px;
+  color: #6e8098;
+  font-family: manrope;
+  font-weight: medium;
+  font-size: 0.9rem;
+}
+
+.c-containerInfoAutor {
+  margin-top: 20px;
+
+  display: flex;
+  /* flex-direction: row; */
+  border: solid red;
+}
+
+.c-containerInfoAutor img {
+  width: 3.9rem;
+  height: 3.9rem;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.c-containerInfoAutor h2 {
+  margin-top: 10px;
+  font-family: Manrope;
+  font-weight: medium;
+  font-size: 0.9rem;
+  color: #48556a;
+}
+
+.c-containerInfoAutor h3 {
+  font-family: Manrope;
+  font-weight: medium;
+  font-size: 0.9rem;
+  color: #9daec2;
+}
+
+.c-containerInfoAutor button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50px;
+  border: none;
+  background-image: url("icon-share.svg");
+  background-repeat: no-repeat;
+  background-size: 40% 40%;
+  background-position: center;
+  margin-bottom: 10px;
+  align-self: flex-end;
+}
+
+@media (max-width: 600px) {
+  .secondaryContainer {
+    flex-direction: column;
+  }
 }
