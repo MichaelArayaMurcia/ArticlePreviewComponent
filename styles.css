@@ -43,6 +43,7 @@ body {
 .contentContainer {
   /* width: 100px; */
   margin: 1.5em;
+  /* border: solid green; */
 }
 
 .contentContainer h1 {
@@ -63,10 +64,10 @@ body {
 
 .c-containerInfoAutor {
   margin-top: 20px;
-
   display: flex;
-  /* flex-direction: row; */
-  border: solid red;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* border: solid red; */
 }
 
 .c-containerInfoAutor img {
@@ -74,6 +75,7 @@ body {
   height: 3.9rem;
   border-radius: 50px;
   margin-right: 10px;
+  /* border: solid yellow; */
 }
 
 .c-containerInfoAutor h2 {
@@ -91,17 +93,24 @@ body {
   color: #9daec2;
 }
 
+.c-containerInfoAutor-Details {
+  /* border: solid purple; */
+  width: 100%;
+}
+
 .c-containerInfoAutor button {
-  width: 3rem;
+  min-width: 3rem;
   height: 3rem;
+  margin: 0;
+  padding: 0;
   border-radius: 50px;
   border: none;
   background-image: url("icon-share.svg");
   background-repeat: no-repeat;
   background-size: 40% 40%;
   background-position: center;
-  margin-bottom: 10px;
-  align-self: flex-end;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 @media (max-width: 600px) {
